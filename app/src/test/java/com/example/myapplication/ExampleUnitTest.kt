@@ -16,7 +16,6 @@ class ExampleUnitTest {
     /**
     Добавьте метод в UserHolder для очистки значений UserHolder после выполнения каждого теста,
     это необходимо чтобы тесты можно было запускать одновременно
-
     @VisibleForTesting(otherwise = VisibleForTesting.NONE)
     fun clearHolder(){
     map.clear()
