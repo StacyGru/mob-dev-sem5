@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthFragment"
+    android:id="@+id/fragment_container">
+
+    <!--СОДЕРЖИМОЕ ФРАГМЕНТА-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fourth_fragment"
+        android:layout_gravity="center"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp">
+    </TextView>
+
+    <!--НАВИГАЦИЯ-->
+    <FrameLayout
+        android:id="@+id/navigation_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/grey">
+        </Button>
+
+    </FrameLayout>
+
+</FrameLayout>

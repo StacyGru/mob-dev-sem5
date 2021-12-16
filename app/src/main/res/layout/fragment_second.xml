@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment"
+    android:id="@+id/fragment_container">
+
+
+    <!--СОДЕРЖИМОЕ ФРАГМЕНТА-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_fragment"
+        android:layout_gravity="center"
+        android:textSize="20sp">
+    </TextView>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+    </EditText>
+
+    <!--НАВИГАЦИЯ-->
+    <FrameLayout
+        android:id="@+id/navigation_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/grey">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/teal_700">
+        </Button>
+
+    </FrameLayout>
+
+</FrameLayout>
