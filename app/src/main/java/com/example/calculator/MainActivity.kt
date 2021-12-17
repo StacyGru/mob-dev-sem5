@@ -18,9 +18,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        replaceFragment(FirstFragment())
+//        replaceFragment(FirstFragment())
 
         setContentView(binding.root)
+        supportFragmentManager.beginTransaction().replace(R.id.navigation_buttons_container, FirstFragment()).commit()
 
         binding.fragment1.setOnClickListener {
             replaceFragment(FirstFragment())
