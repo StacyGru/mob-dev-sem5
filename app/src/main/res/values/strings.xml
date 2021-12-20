@@ -9,10 +9,10 @@
     <string name="next">Вперёд</string>
     <string name="previous">Назад</string>
 
-    <string name="first_fragment_button">1 step</string>
-    <string name="second_fragment_button">2 step</string>
-    <string name="third_fragment_button">3 step</string>
-    <string name="fourth_fragment_button">4 step</string>
+    <string name="first_fragment_button">1 шаг</string>
+    <string name="second_fragment_button">2 шаг</string>
+    <string name="third_fragment_button">3 шаг</string>
+    <string name="fourth_fragment_button">4 шаг</string>
 
     <string name="first_fragment">Введите первое число:</string>
     <string name="second_fragment">Введите второе число:</string>

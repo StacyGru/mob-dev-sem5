@@ -79,6 +79,7 @@
         app:layout_constraintLeft_toLeftOf="parent">
 
         <Button
+            android:id="@+id/plus"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -90,6 +91,7 @@
         </Button>
 
         <Button
+            android:id="@+id/minus"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -101,6 +103,7 @@
         </Button>
 
         <Button
+            android:id="@+id/multiply"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -112,6 +115,7 @@
         </Button>
 
         <Button
+            android:id="@+id/divide"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_gravity="center"

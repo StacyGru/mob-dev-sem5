@@ -6,9 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import android.widget.Button
+import androidx.fragment.app.activityViewModels
 
 
 class ThirdFragment : Fragment() {
+
+    private val dataModel: DataModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -16,6 +19,23 @@ class ThirdFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_third, container, false)
+        val plusBtn : Button = view.findViewById(R.id.plus)
+        val minusBtn : Button = view.findViewById(R.id.minus)
+        val multBtn : Button = view.findViewById(R.id.multiply)
+        val divBtn : Button = view.findViewById(R.id.divide)
+        plusBtn.setOnClickListener{
+            dataModel.action.value = "+"
+        }
+        minusBtn.setOnClickListener{
+            dataModel.action.value = "-"
+        }
+        multBtn.setOnClickListener{
+            dataModel.action.value = "*"
+        }
+        divBtn.setOnClickListener{
+            dataModel.action.value = "/"
+        }
+
         val prevBtn : Button = view.findViewById(R.id.previous)
         prevBtn.setOnClickListener{
             val fragment = SecondFragment()
