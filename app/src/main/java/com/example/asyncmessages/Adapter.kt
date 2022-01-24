@@ -9,8 +9,8 @@ class Adapter(
     var messagesList: MutableList<Message>) :
     RecyclerView.Adapter<Adapter.Holder>()
 {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val binding = MessageItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Adapter.Holder {
+        val binding = MessageItemBinding.inflate(LayoutInflater.from(parent.context))
         return Holder(binding)
     }
 
